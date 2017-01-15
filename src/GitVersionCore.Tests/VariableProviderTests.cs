@@ -173,6 +173,7 @@ public class VariableProviderTests
         var vars = VariableProvider.GetVariablesFor(semVer, config, false);
 
         vars.FullSemVer.ShouldBe("1.2.3-PullRequest0002.5");
+        vars.NuGetVersionV2.ShouldBe("");
     }
 
     [Test]

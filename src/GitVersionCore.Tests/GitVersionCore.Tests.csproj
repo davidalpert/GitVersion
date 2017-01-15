@@ -128,6 +128,7 @@
     <Compile Include="IntegrationTests\MainlineDevelopmentMode.cs" />
     <Compile Include="LogMessages.cs" />
     <Compile Include="Mocks\MockThreadSleep.cs" />
+    <Compile Include="NugetCompatibility\NugetCompatibilityTests.cs" />
     <Compile Include="OperationWithExponentialBackoffTests.cs" />
     <Compile Include="Init\InitScenarios.cs" />
     <Compile Include="Init\InitStepsDefaultResponsesDoNotThrow.cs" />
@@ -182,6 +183,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Content Include="NugetCompatibility\Readme.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NugetCompatibility\SamplePackage.nuspec">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +206,9 @@
     <Content Include="Approved\VariableProviderTests.ProvidesVariablesInContinuousDeploymentModeForPreRelease.approved.txt" />
     <Content Include="Approved\VariableProviderTests.ProvidesVariablesInContinuousDeploymentModeForStable.approved.txt" />
     <Content Include="Approved\VariableProviderTests.ProvidesVariablesInContinuousDeploymentModeForStableWhenCurrentCommitIsTagged.approved.txt" />
+    <Content Include="NugetCompatibility\2.1.0\nuget.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
